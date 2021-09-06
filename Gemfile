@@ -46,9 +46,8 @@ gem 'dalli'
 gem 'rake'
 gem 'rdoc'
 
-# gem 'tml', '~> 5.7'
-# gem 'tml', :git => 'git://github.com/translationexchange/tml-ruby.git', :branch => :develop
-# gem 'tml', :path => '../tml-ruby'
+# Use forked version because of Ruby upgrade
+gem 'tml', git: 'git://github.com/RepairShopr/tml-ruby.git', branch: :master
 
 gem 'coveralls'
 
