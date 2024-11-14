@@ -35,7 +35,7 @@ namespace :tml do
 
   desc 'initializes tml'
   task :init => :environment do
-    unless File.exists?("#{Rails.root}/config/initializers/tml.rb")
+    unless File.exist?("#{Rails.root}/config/initializers/tml.rb")
       root = File.expand_path('../templates', __FILE__)
       system "cp #{root}/tml.rb #{Rails.root}/config/initializers"
       puts 'Please update config/initializers/tml.rb with your application token'
