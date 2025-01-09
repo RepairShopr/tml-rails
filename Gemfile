@@ -36,7 +36,7 @@ Encoding.default_internal = Encoding::UTF_8
 
 gemspec
 
-gem 'rails', '>= 5.0', '< 7'
+gem 'rails', '>= 5.0', '< 9'
 
 gem 'bundler'
 gem 'puma'
@@ -47,7 +47,7 @@ gem 'rake'
 gem 'rdoc'
 
 # Use forked version because of Ruby upgrade
-gem 'tml', git: 'git://github.com/RepairShopr/tml-ruby.git', branch: :master
+gem 'tml', git: 'https://github.com/RepairShopr/tml-ruby.git', branch: :master
 
 gem 'coveralls'
 
